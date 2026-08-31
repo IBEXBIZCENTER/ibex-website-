@@ -1,0 +1,65 @@
+IBEX BUSINESS CENTER — WEBSITE SETUP GUIDE
+============================================
+
+You now own this website completely — no monthly fees, no builder lock-in.
+It's 5 plain HTML pages (Home, About, Services, Testimonials, Contact) plus
+one style file. Here's the easiest free way to get it live on your GoDaddy
+domain (ibexbizcenter.com).
+
+STEP 1 — Create a free GitHub account
+--------------------------------------
+Go to github.com and sign up (free).
+
+STEP 2 — Create a repository
+--------------------------------------
+1. Click "New repository"
+2. Name it: ibex-website (or anything you like)
+3. Set it to Public
+4. Click "Create repository"
+
+STEP 3 — Upload the files
+--------------------------------------
+1. On your new repo page, click "Add file" > "Upload files"
+2. Drag in ALL the files from this folder (index.html, about.html,
+   services.html, testimonials.html, contact.html, style.css)
+3. Click "Commit changes"
+
+STEP 4 — Turn on GitHub Pages
+--------------------------------------
+1. In your repo, go to Settings > Pages
+2. Under "Branch," choose "main" and folder "/ (root)", then Save
+3. GitHub will give you a URL like: yourname.github.io/ibex-website
+   (Your site is now live for free at that address.)
+
+STEP 5 — Connect your GoDaddy domain
+--------------------------------------
+1. In the same GitHub Pages settings, add your custom domain:
+   ibexbizcenter.com (and www.ibexbizcenter.com)
+2. Log into GoDaddy > My Products > DNS (for ibexbizcenter.com)
+3. Add these records (GitHub's docs show the current IPs — search
+   "GitHub Pages custom domain A records" if the ones below change):
+     A record   @     185.199.108.153
+     A record   @     185.199.109.153
+     A record   @     185.199.110.153
+     A record   @     185.199.111.153
+     CNAME      www   yourname.github.io
+4. Save. DNS changes can take anywhere from a few minutes to 24-48 hours.
+5. Back in GitHub Pages settings, check "Enforce HTTPS" once it's available.
+
+That's it — your domain will now point to your own free, self-hosted site.
+
+CONTACT FORM NOTE
+--------------------------------------
+The contact form on contact.html currently just shows a "thanks" message —
+it doesn't actually email you yet, since plain HTML can't send email on its
+own. The easiest free fix: sign up at formspree.io (free tier), and they'll
+give you a form endpoint URL and a one-line code change to plug in. Ask me
+and I can make that edit for you once you have the endpoint.
+
+WANT TO EDIT TEXT OR ADD PHOTOS LATER?
+--------------------------------------
+- Text: open any .html file in a text editor (or GitHub's own editor) and
+  change the words inside the tags — no coding knowledge really needed.
+- Photos: add an <img src="photo.jpg" alt="..."> tag wherever you want one,
+  and upload the photo file into the same GitHub repo. Just ask me and I'll
+  do this for you — send me the photos and where you want them.

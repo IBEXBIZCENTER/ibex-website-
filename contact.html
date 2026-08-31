@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — IBEX Business Center</title>
+<meta name="description" content="Contact IBEX Business Center in Dumfries, VA. Visit us or call for shipping, mailbox services, notary support, and business assistance.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="IBEX Business Center logo" style="height:40px; display:block;"></a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">MENU</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <span class="eyebrow-tag">GET IN TOUCH</span>
+    <h1>Stop by, call, or send us a note.</h1>
+    <p>Whether you need shipping, mailbox services, notary support, or document help, we're here. We make everyday business tasks simple.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <h2>Send a message</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-status').textContent='Thanks — we\'ll get back to you as soon as possible.';">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status mono" style="font-size:.85rem;"></p>
+      </form>
+      <p class="mono" style="font-size:.78rem; margin-top:8px;">Note: this form needs a form-handling service (like Formspree) once the site is hosted — see the setup notes.</p>
+    </div>
+
+    <div>
+      <h2>Visit or call</h2>
+      <div class="info-block">
+        <h3>Address</h3>
+        <p>16708 Richmond Hwy, Suite 111<br>Dumfries, VA 22026</p>
+      </div>
+      <div class="info-block">
+        <h3>Phone</h3>
+        <p><a href="tel:7032917273">703-291-7273</a></p>
+      </div>
+      <div class="info-block">
+        <h3>Email</h3>
+        <p><a href="mailto:info@ibexbizcenter.com">info@ibexbizcenter.com</a></p>
+      </div>
+      <div class="info-block">
+        <h3>Hours</h3>
+        <p>Mon–Fri: 9:00 am – 7:00 pm<br>Sat: 10:00 am – 4:00 pm<br>Sun: Closed</p>
+      </div>
+      <div class="map-embed" style="margin-top:20px;">
+        <iframe title="IBEX Business Center location" loading="lazy"
+          src="https://www.google.com/maps?q=16708+Richmond+Hwy+Suite+111+Dumfries+VA+22026&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>IBEX Business Center</h3>
+        <p>Shipping, mailbox rentals, notary services, printing, and passport photos in Dumfries, VA.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:7032917273">703-291-7273</a></li>
+          <li><a href="mailto:info@ibexbizcenter.com">info@ibexbizcenter.com</a></li>
+          <li><a href="https://facebook.com/profile.php?id=61577737603352" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/theibexbiz" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IBEX BUSINESS CENTER</span>
+      <span>DUMFRIES, VA 22026</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
