@@ -152,7 +152,7 @@ nav.links a:hover{ color:var(--stamp); text-decoration:none; }
 }
 .label-row{
   display:flex; justify-content:space-between; align-items:center;
-  font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-70);
+  font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--stamp); font-weight:700;
   padding-top:14px; margin-bottom:16px;
 }
 .label-card h3{ margin-bottom:14px; }
@@ -163,10 +163,11 @@ nav.links a:hover{ color:var(--stamp); text-decoration:none; }
 .label-list{ list-style:none; margin:0; padding:0; font-size:.92rem; }
 .label-list li{
   display:flex; justify-content:space-between; gap:10px;
-  padding:8px 0; border-top:1px solid var(--line); color:var(--ink);
+  padding:10px 0; border-top:1px solid var(--line); color:var(--ink);
 }
 .label-list li:first-child{ border-top:none; }
-.label-list span.dim{ color:var(--ink-70); }
+.label-list li span:first-child{ font-weight:600; }
+.label-list span.dim{ color:var(--ink-70); font-variant-numeric:tabular-nums; }
 
 /* ---------- Sections ---------- */
 section{ padding:64px 0; }
@@ -186,7 +187,7 @@ section.tinted{ background:var(--kraft); }
   background:var(--paper); padding:28px 26px; min-height:170px;
   display:flex; flex-direction:column; justify-content:space-between;
 }
-.card .num{ font-family:'JetBrains Mono',monospace; font-size:.75rem; color:var(--stamp); }
+.card .num{ display:none; }
 .card p{ font-size:.94rem; margin:8px 0 0; }
 
 /* Why us strip */
