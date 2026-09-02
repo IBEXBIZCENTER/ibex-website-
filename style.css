@@ -57,7 +57,7 @@ header.site{
 }
 .nav{
   display:flex; align-items:center; justify-content:space-between;
-  padding:18px 0;
+  padding:26px 0;
 }
 .brand{
   display:flex; align-items:baseline; gap:10px;
@@ -137,7 +137,7 @@ nav.links a:hover{ color:var(--stamp); text-decoration:none; }
 .hero .btn-outline{ color:#fff; border-color:#fff; }
 .hero .btn-outline:hover{ background:#fff; color:var(--ink); }
 
-.brand img{ height:68px !important; }
+.brand img{ height:96px !important; }
 
 /* clean hero info list (floats over hero photo) */
 .hero-info{ display:flex; flex-direction:column; gap:0; }
