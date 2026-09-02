@@ -47,7 +47,7 @@ a:focus-visible, button:focus-visible{ outline:3px solid var(--stamp); outline-o
   letter-spacing:.02em;
 }
 
-.wrap{ max-width:1120px; margin:0 auto; padding:0 28px; }
+.wrap{ max-width:1400px; margin:0 auto; padding:0 40px; }
 
 /* ---------- Header ---------- */
 header.site{
