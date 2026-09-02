@@ -1,340 +1,172 @@
-/* IBEX Business Center — shipping-label inspired design system */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IBEX Business Center — Shipping, Notary &amp; Printing in Dumfries, VA</title>
+<meta name="description" content="IBEX Business Center in Dumfries, VA offers shipping, mailbox rentals, notary, printing, and passport photo services. Fast, friendly, in-person support.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="IBEX Business Center logo" style="height:40px; display:block;"></a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">MENU</button>
+    <nav class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
 
-:root{
-  --paper:   #FFFFFF;
-  --kraft:   #FDEDE6;
-  --kraft-dark: #F3C7B3;
-  --ink:     #1E1B18;
-  --ink-70:  #5a534c;
-  --stamp:   #E1481F;
-  --line:    #ecdfd8;
-  --radius:  2px;
-}
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow-tag">DUMFRIES, VA · SUITE 111</span>
+      <h1>Your shipment,<br>handled right.</h1>
+      <p>Shipping, mailbox rentals, notary services, printing, and passport photos — all under one roof, with a team that actually knows your name.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Get a Mailbox / Quote</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+      </div>
+    </div>
 
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
+    <div class="hero-info">
+      <div class="hero-info-item">
+        <h3>Hours</h3>
+        <p>Mon–Fri: 9:00 am – 7:00 pm<br>Sat: 10:00 am – 4:00 pm</p>
+      </div>
+      <div class="hero-info-item">
+        <h3>Service Area</h3>
+        <p>Dumfries, VA</p>
+      </div>
+      <div class="hero-info-item">
+        <h3>Contact</h3>
+        <p>703-291-7273</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-body{
-  margin:0;
-  background:var(--paper);
-  color:var(--ink);
-  font-family:'Work Sans', sans-serif;
-  font-size:17px;
-  line-height:1.55;
-}
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-tag">WHAT WE DO</span>
+      <h2>Seven services, one stop.</h2>
+      <p>We proudly serve residents, small businesses, and entrepreneurs in Dumfries with professional, in-person support and fast service.</p>
+    </div>
+    <div class="photo-grid">
+      <a href="services.html#ShippingServices" class="photo-card">
+        <img src="images/shipping.png" alt="Shipping boxes">
+        <div class="photo-card-label">Shipping Services<br>(USPS, UPS, FedEx)</div>
+      </a>
+      <a href="services.html#MailboxRental" class="photo-card">
+        <img src="images/mailbox.png" alt="Mailbox rental envelopes">
+        <div class="photo-card-label">Mailbox Rental</div>
+      </a>
+      <a href="services.html#NotaryPublicServices" class="photo-card">
+        <img src="images/notary.png" alt="Notary document binders">
+        <div class="photo-card-label">Notary Public Services</div>
+      </a>
+      <a href="services.html#PrintingCopyingServices" class="photo-card">
+        <img src="images/printing.png" alt="Printed document stacks">
+        <div class="photo-card-label">Printing &amp; Copying Services</div>
+      </a>
+      <a href="services.html#PassportPhotos" class="photo-card">
+        <img src="images/passport.png" alt="Passport photo examples">
+        <div class="photo-card-label">Passport Photos</div>
+      </a>
+      <a href="services.html#PackageDrop-Off" class="photo-card">
+        <img src="images/dropoff.png" alt="Packages for drop-off">
+        <div class="photo-card-label">Package Drop-Off</div>
+      </a>
+      <a href="services.html#FaxingServices" class="photo-card">
+        <img src="images/faxing.png" alt="Fax machine">
+        <div class="photo-card-label">Faxing Services</div>
+      </a>
+    </div>
+  </div>
+</section>
 
-h1,h2,h3{
-  font-family:'Archivo Black', sans-serif;
-  font-weight:400;
-  line-height:1.05;
-  margin:0 0 .4em;
-  color:var(--ink);
-  letter-spacing:-0.01em;
-}
-h1{ font-size:clamp(2.3rem, 5vw, 3.6rem); }
-h2{ font-size:clamp(1.6rem, 3vw, 2.2rem); }
-h3{ font-size:1.15rem; }
+<section class="tinted">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-tag">WHY IBEX</span>
+      <h2>What makes us different is the people.</h2>
+      <p>Instead of automated systems or long wait times, our team provides hands-on assistance to make every visit simple and stress-free.</p>
+    </div>
+    <div class="why-strip">
+      <div class="why-item"><h3>Personalized Care</h3><p>Real people who know your orders, not a call tree.</p></div>
+      <div class="why-item"><h3>Fast Turnaround</h3><p>Efficient service so you're in and out quickly.</p></div>
+      <div class="why-item"><h3>Secure Handling</h3><p>Your mail and packages are handled carefully and securely.</p></div>
+      <div class="why-item"><h3>Reliable Carriers</h3><p>Trusted partnerships with USPS, UPS, and FedEx.</p></div>
+    </div>
+    <img src="images/carriers.png" alt="USPS, UPS, and FedEx logos" style="width:100%; margin-top:32px; display:block;">
+  </div>
+</section>
 
-p{ margin:0 0 1em; max-width:62ch; color:var(--ink-70); }
-a{ color:var(--stamp); text-decoration:none; }
-a:hover{ text-decoration:underline; }
-a:focus-visible, button:focus-visible{ outline:3px solid var(--stamp); outline-offset:3px; }
+<section class="tinted">
+  <div class="wrap" style="text-align:left; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
+    <div>
+      <h2 style="margin-bottom:6px;">Visit us today.</h2>
+      <p style="margin:0;">16708 Richmond Hwy, Suite 111, Dumfries, VA 22026</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Get Directions</a>
+  </div>
+</section>
 
-.mono{
-  font-family:'JetBrains Mono', monospace;
-  letter-spacing:.02em;
-}
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>IBEX Business Center</h3>
+        <p>Shipping, mailbox rentals, notary services, printing, and passport photos in Dumfries, VA.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:7032917273">703-291-7273</a></li>
+          <li><a href="mailto:info@ibexbizcenter.com">info@ibexbizcenter.com</a></li>
+          <li><a href="https://facebook.com/profile.php?id=61577737603352" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/theibexbiz" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IBEX BUSINESS CENTER</span>
+      <span>DUMFRIES, VA 22026</span>
+    </div>
+  </div>
+</footer>
 
-.wrap{ max-width:1120px; margin:0 auto; padding:0 28px; }
-
-/* ---------- Header ---------- */
-header.site{
-  border-bottom:1px solid var(--line);
-  background:var(--paper);
-  position:sticky; top:0; z-index:20;
-}
-.nav{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:18px 0;
-}
-.brand{
-  display:flex; align-items:baseline; gap:10px;
-  font-family:'Archivo Black', sans-serif;
-  font-size:1.3rem; color:var(--ink); text-decoration:none;
-}
-.brand small{
-  font-family:'JetBrains Mono', monospace;
-  font-size:.62rem; color:var(--stamp); font-weight:500;
-  border:1px solid var(--stamp); padding:2px 6px; border-radius:2px;
-}
-.brand:hover{ text-decoration:none; }
-nav.links{ display:flex; gap:28px; align-items:center; }
-nav.links a{
-  color:var(--ink); font-size:.95rem; font-weight:600;
-}
-nav.links a.active{ color:var(--stamp); }
-nav.links a:hover{ color:var(--stamp); text-decoration:none; }
-.nav-cta{
-  background:var(--ink); color:var(--paper) !important;
-  padding:9px 16px; border-radius:2px; font-size:.9rem !important;
-}
-.nav-cta:hover{ background:var(--stamp); text-decoration:none !important; }
-.menu-toggle{ display:none; }
-
-@media (max-width:760px){
-  nav.links{
-    display:none; position:absolute; top:100%; left:0; right:0;
-    flex-direction:column; align-items:flex-start; gap:0;
-    background:var(--paper); border-bottom:1px solid var(--line);
-  }
-  nav.links.open{ display:flex; }
-  nav.links a{ width:100%; padding:14px 28px; border-top:1px solid var(--line); }
-  .nav-cta{ margin:14px 28px; }
-  .menu-toggle{
-    display:block; background:none; border:1px solid var(--ink); border-radius:2px;
-    font-family:'JetBrains Mono',monospace; font-size:.8rem; padding:8px 12px; cursor:pointer;
-  }
-}
-
-/* ---------- Hero ---------- */
-.hero{
-  padding:64px 0 56px;
-  border-bottom:1px solid var(--line);
-  position:relative;
-  background-image:
-    linear-gradient(120deg, rgba(30,27,24,.88) 0%, rgba(30,27,24,.65) 45%, rgba(30,27,24,.35) 100%),
-    url('images/about-guy.png');
-  background-size:cover;
-  background-position:center;
-}
-.hero h1, .hero p{ color:#fff; }
-.hero .eyebrow-tag{ background:rgba(255,255,255,.15); color:#fff; }
-.hero p{ color:#e9e4de; }
-.hero .wrap{
-  display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;
-}
-@media (max-width:860px){ .hero .wrap{ grid-template-columns:1fr; } }
-
-.eyebrow-tag{
-  display:inline-block;
-  font-family:'JetBrains Mono', monospace; font-size:.72rem;
-  color:var(--stamp); background:var(--kraft);
-  padding:5px 12px; border-radius:20px; margin-bottom:18px;
-  font-weight:600; letter-spacing:.03em;
-}
-.hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:26px; }
-.btn{
-  display:inline-block; font-weight:600; font-size:.95rem;
-  padding:13px 22px; border-radius:2px; border:2px solid var(--ink);
-  cursor:pointer;
-}
-.btn-primary{ background:var(--ink); color:var(--paper); }
-.btn-primary:hover{ background:var(--stamp); border-color:var(--stamp); color:var(--paper); text-decoration:none; }
-.btn-outline{ background:transparent; color:var(--ink); }
-.btn-outline:hover{ background:var(--ink); color:var(--paper); text-decoration:none; }
-.hero .btn-outline{ color:#fff; border-color:#fff; }
-.hero .btn-outline:hover{ background:#fff; color:var(--ink); }
-
-.brand img{ height:56px !important; }
-
-/* clean hero info list (floats over hero photo) */
-.hero-info{ display:flex; flex-direction:column; gap:0; }
-.hero-info-item{
-  padding:18px 0; border-top:1.5px solid var(--stamp);
-}
-.hero-info-item:first-child{ border-top:none; }
-.hero-info-item h3{ color:#fff; font-weight:700; font-size:1.1rem; margin-bottom:4px; }
-.hero-info-item p{ color:#fff; font-weight:600; margin:0; font-size:.98rem; text-shadow:0 1px 3px rgba(0,0,0,.4); }
-
-/* shipping label card */
-.label-card{
-  background:var(--paper);
-  border:2px solid var(--ink);
-  padding:22px 24px;
-  position:relative;
-  box-shadow:8px 8px 0 var(--kraft-dark);
-}
-.label-card::before{
-  content:"";
-  position:absolute; left:0; right:0; top:14px;
-  height:0; border-top:1px solid var(--line);
-}
-.label-row{
-  display:flex; justify-content:space-between; align-items:center;
-  font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--stamp); font-weight:700;
-  padding-top:14px; margin-bottom:16px;
-}
-.label-card h3{ margin-bottom:14px; }
-.barcode{
-  display:flex; gap:3px; align-items:flex-end; height:34px; margin:16px 0 6px;
-}
-.barcode span{ background:var(--ink); width:3px; }
-.label-list{ list-style:none; margin:0; padding:0; font-size:.92rem; }
-.label-list li{
-  display:flex; justify-content:space-between; gap:10px;
-  padding:10px 0; border-top:1px solid var(--line); color:var(--ink);
-}
-.label-list li:first-child{ border-top:none; }
-.label-list li span:first-child{ font-weight:600; }
-.label-list span.dim{ color:var(--ink-70); font-variant-numeric:tabular-nums; }
-
-/* ---------- Sections ---------- */
-section{ padding:64px 0; }
-section.tinted{ background:var(--kraft); }
-.section-head{ max-width:640px; margin-bottom:40px; }
-.section-head .eyebrow-tag{ margin-bottom:14px; }
-
-/* Photo service grid (homepage) */
-.photo-grid{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:2px;
-  background:transparent; border:none;
-}
-@media (max-width:860px){ .photo-grid{ grid-template-columns:repeat(2,1fr); } }
-@media (max-width:560px){ .photo-grid{ grid-template-columns:1fr; } }
-.photo-card{ display:block; text-decoration:none; background:var(--paper); overflow:hidden; }
-.photo-card img{
-  width:100%; aspect-ratio:4/3; object-fit:cover; display:block;
-  transition: transform .3s ease;
-}
-.photo-card img.spin-play{ animation: spin-in 1s ease-in-out; }
-.photo-card:hover img{ transform:scale(1.08); }
-.photo-card-label{
-  background:var(--stamp); color:#fff; font-weight:700; text-align:center;
-  padding:16px 12px; font-size:.98rem; line-height:1.3;
-  transition: background .2s ease;
-}
-.photo-card:hover .photo-card-label{ background:var(--ink); text-decoration:none; }
-
-/* Service grid */
-.grid{
-  display:grid; grid-template-columns:repeat(3,1fr); gap:2px;
-  background:var(--line);
-  border:1px solid var(--line);
-}
-@media (max-width:860px){ .grid{ grid-template-columns:repeat(2,1fr); } }
-@media (max-width:560px){ .grid{ grid-template-columns:1fr; } }
-.card{
-  background:var(--paper); padding:28px 26px; min-height:170px;
-  display:flex; flex-direction:column; justify-content:space-between;
-}
-.card .num{ display:none; }
-.card p{ font-size:.94rem; margin:8px 0 0; }
-
-/* Why us strip */
-.why-strip{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
-  border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);
-}
-@media (max-width:760px){ .why-strip{ grid-template-columns:repeat(2,1fr); } }
-.why-item{
-  padding:26px 20px; border-left:1px solid var(--ink);
-}
-.why-item:first-child{ border-left:none; }
-@media (max-width:760px){ .why-item:nth-child(odd){ border-left:none; } .why-item{ border-left:1px solid var(--ink); border-top:1px solid var(--ink);} .why-item:nth-child(1),.why-item:nth-child(2){border-top:none;} }
-.why-item h3{ font-size:1rem; margin-bottom:6px; }
-.why-item p{ font-size:.88rem; margin:0; }
-
-/* Testimonials */
-.quote-card{
-  border:1px solid var(--line); background:var(--paper);
-  padding:26px 24px; position:relative;
-}
-.quote-card p{ font-size:1.02rem; color:var(--ink); margin-bottom:12px; }
-.quote-meta{ font-family:'JetBrains Mono',monospace; font-size:.75rem; color:var(--stamp); }
-.quote-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-@media (max-width:860px){ .quote-grid{ grid-template-columns:1fr; } }
-
-/* Contact page redesign */
-.contact-intro-grid{ display:grid; grid-template-columns:1.3fr .7fr; gap:40px; align-items:center; }
-@media (max-width:860px){ .contact-intro-grid{ grid-template-columns:1fr; } }
-.contact-intro-photo{ width:100%; border:2px solid var(--ink); object-fit:cover; aspect-ratio:4/3; display:block; }
-.contact-panels{ display:flex; flex-direction:column; gap:2px; }
-.contact-panel{ background:var(--stamp); color:#fff; padding:24px; }
-.contact-panel.dark{ background:var(--ink); }
-.contact-panel h3{ color:#fff; margin-bottom:6px; }
-.contact-panel p{ color:#fff; margin:0; opacity:.95; }
-.contact-panel a{ color:#fff; text-decoration:underline; }
-
-/* Contact / about layout */
-.two-col{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; }
-@media (max-width:860px){ .two-col{ grid-template-columns:1fr; } }
-.info-block{ border-top:1px solid var(--line); padding:16px 0; }
-.info-block:first-of-type{ border-top:none; }
-.info-block h3{ font-size:.95rem; text-transform:none; margin-bottom:6px; }
-.info-block p{ margin:0; font-size:.95rem; }
-
-form.contact-form{ display:flex; flex-direction:column; gap:16px; }
-form.contact-form label{ font-size:.85rem; font-weight:600; display:block; margin-bottom:6px; }
-form.contact-form input, form.contact-form textarea{
-  width:100%; border:1.5px solid var(--ink); border-radius:2px;
-  padding:12px 14px; font-family:'Work Sans',sans-serif; font-size:.95rem; background:var(--paper);
-}
-form.contact-form textarea{ resize:vertical; min-height:120px; }
-form.contact-form button{ align-self:flex-start; }
-
-/* Service photo blocks (image + benefit checklist) */
-.service-block{
-  display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;
-  perspective:1000px;
-}
-@media (max-width:860px){ .service-block{ grid-template-columns:1fr; } }
-.service-photo{
-  width:100%; aspect-ratio:4/3; object-fit:cover;
-  border:2px solid var(--ink); background:var(--kraft);
-}
-.service-photo.spin-play{ animation: spin-in 1s ease-in-out; }
-@keyframes spin-in{
-  0%   { transform:rotateY(0deg); }
-  100% { transform:rotateY(360deg); }
-}
-.service-photo-placeholder{
-  width:100%; aspect-ratio:4/3;
-  border:2px dashed var(--kraft-dark); background:var(--kraft);
-  display:flex; align-items:center; justify-content:center; text-align:center;
-  font-family:'JetBrains Mono',monospace; font-size:.8rem; color:var(--ink-70); padding:20px;
-}
-.benefits{ list-style:none; margin:16px 0 0; padding:0; }
-.benefits li{
-  display:flex; align-items:flex-start; gap:12px; padding:8px 0; font-size:.96rem; color:var(--ink);
-}
-.check{
-  flex:0 0 auto; width:22px; height:22px; border-radius:50%;
-  background:var(--stamp); color:var(--paper);
-  display:flex; align-items:center; justify-content:center;
-  font-size:.75rem; font-weight:700; margin-top:1px;
-}
-.benefits-label{ font-weight:700; margin:18px 0 4px; font-size:.95rem; }
-
-/* map */
-.map-embed{ border:2px solid var(--ink); }
-.map-embed iframe{ display:block; width:100%; height:320px; border:0; }
-
-/* Footer */
-footer.site{
-  border-top:1px solid var(--ink); background:var(--ink); color:#fff;
-  padding:44px 0 30px;
-}
-footer.site a{ color:#fff; }
-.footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:32px; margin-bottom:30px; }
-@media (max-width:760px){ .footer-grid{ grid-template-columns:1fr; } }
-footer.site h3{ color:#fff; font-size:.9rem; margin-bottom:14px; }
-footer.site p{ color:#d8d3cd; font-size:.9rem; }
-.footer-links{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
-.footer-links a{ font-size:.9rem; color:#d8d3cd; }
-.footer-links a:hover{ color:var(--stamp); }
-.footer-bottom{
-  border-top:1px solid #3a342e; padding-top:20px;
-  display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-  font-size:.8rem; color:#a89f96; font-family:'JetBrains Mono',monospace;
-}
-
-/* page hero (interior pages) */
-.page-head{ padding:48px 0 40px; border-bottom:1px solid var(--line); }
-.page-head p{ font-size:1.05rem; }
-
-.breadcrumb{
-  font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-70); margin-bottom:16px;
-}
-.breadcrumb a{ color:var(--ink-70); }
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var targets = document.querySelectorAll('.service-photo, .photo-card img');
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('spin-play');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.3});
+  targets.forEach(function(el){ observer.observe(el); });
+});
+</script>
+</body>
+</html>
